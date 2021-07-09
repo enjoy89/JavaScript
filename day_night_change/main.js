@@ -7,12 +7,10 @@ function setColor_body(color) {
 }
 
 function setColor_link(color) {
-    let alist = document.querySelector("a").style.color = color;
+    document.querySelector("a").style.color = color;
 }
 
 function day_night_change(self) {
-    let target = document.querySelector("body");
-
     if(self.value == "Day") {
         setBackgroundColor_body('#282828');
         setColor_body('white');
