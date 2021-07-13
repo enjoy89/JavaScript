@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+
+<body>
+    <h1>자바스크립트 함수</h1>
+    <hr>
+    <script>
+        function print_helloworld() {
+            document.write("Hello World!<br>");
+        }
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+        let num = 10;
+        function Num() {
+            num = 30;
+            document.write("함수 내부에서 지역변수 num의 값: " + num + "<br>");
+        }
+
+        document.write("함수를 이용해 Hello world 출력해보기<br>");
+        print_helloworld();
+
+        document.write("함수의 리턴값을 변수에 저장하여 덧셈 결과 출력하기 : ");
+        let result = sum(1, 3);
+        document.write("1 + 3 = " + result + "<br>");
+
+        document.write("함수 외부에서 전역변수 num의 값: " + num + "<br>");
+        Num();
+    </script>
+
+</body>
+
+</html>
